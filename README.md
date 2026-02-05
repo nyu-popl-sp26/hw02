@@ -1,6 +1,6 @@
 ## Homework 2
 
-The deadline for Homework 2 is Friday, September 22, 6pm. The late submission deadline is Friday, September 29, 4pm.
+The deadline for Homework 2 is Thursday, February 12, 2pm. 
 
 Refer to the homework handout [`hw02.pdf`](hw02.pdf) for details about the assignment. This file provides some information to help you get started with setting up your development environment for the homework assignments.
 
@@ -12,18 +12,18 @@ provided in the announcement of this homework assignment on
 Brightspace. After clicking on the link, you will receive an email from
 GitHub, when your copy of the repository is ready. It will be
 available at
-`https://github.com/nyu-popl-fa23/hw02-<YOUR-GITHUB-USERNAME>`.
+`https://github.com/nyu-popl-sp26/homework-2-<YOUR-GITHUB-USERNAME>`.
 Note that this may take a few minutes.
 
-* Open a browser at `https://github.com/nyu-popl-fa23/hw02-<YOUR-GITHUB-USERNAME>` with your Github username inserted at the appropriate place in the URL.
+* Open a browser at `https://github.com/nyu-popl-sp26/homework-2-<YOUR-GITHUB-USERNAME>` with your Github username inserted at the appropriate place in the URL.
 * Choose a place on your computer for your homework assignments to reside and open a terminal to that location.
 * Execute the following git command: <br/>
   ```bash
-  git clone https://github.com/nyu-popl-fa23/hw02-<YOUR-GITHUB-USERNAME>.git hw02
+  git clone https://github.com/nyu-popl-sp26/homework-2-<YOUR-GITHUB-USERNAME>.git hw02
   cd hw02
   ```
 
-Please make sure that you clone the copy of your own version of this repository that is identified by your Github username, rather than the template repository.
+Please make sure that you clone the copy of your own version of this repository that is identified by your GitHub username, rather than the template repository.
 
 The problems that you you should solve for this assignment are described in the file `hw02.pdf`.
 
@@ -33,8 +33,8 @@ src/main/scala/popl/hw02.scala
 ``` 
 relative to the root directory of the repository. Follow the
 instructions in the
-[in-class-code](https://github.com/nyu-popl-fa23/in-class-code)
-repository to import the project into InteliJ (or use your other
+[in-class-code](https://github.com/nyu-popl-sp26/in-class-code)
+repository to import the project into IntelliJ (or use your other
 favorite IDE or editor to work on the assignment).
 
 You can implement the solutions by replacing the `???`  expressions in
@@ -61,7 +61,7 @@ You can replace "solution" by a more meaningful commit message.
 
 Refresh your browser window pointing at
 ```
-https://github.com/nyu-popl-fa23/hw02-<YOUR-GITHUB-USERNAME>/
+https://github.com/nyu-popl-sp26/homework-2-<YOUR-GITHUB-USERNAME>/
 ```
 and double-check that your solution has been uploaded correctly.
 
@@ -91,9 +91,9 @@ If you add the option `-d` as additional argument to the run command, you will s
 
 Alternatively, you can run the interpreter directly from inside the IDE. To do so, right-click the file `hw02.scala` and select "More Run/Debug" and then "Modify Run Configuration". You can provide the command line arguments to the interpreter in the text field labeled "Program arguments". Enter e.g. "testjs/test01_arith.js" in this field and click "OK". When you now right-click on the file `hw02.scala` and select "Run 'hw02'", then the interpreter will be executed with the specified command line arguments.
 
-I suggest that you run your implementation on the provided JavaScript files once all the unit tests are passing.
+You are advised to run your implementation on the provided JavaScript files once all the unit tests are passing.
 
-I strongly advise you to write your own additional unit tests and JavaScript test files to further increase your confidence that your implementation of the interpreter is correct. In general, the set of tests that we will use to grade your solutions is a superset of the tests that are provided with the project template.
+You are strongly advised to write your own additional unit tests and JavaScript test files to further increase your confidence that your implementation of the interpreter is correct. In general, the set of tests that we will use to grade your solutions is a superset of the tests that are provided with the project template.
 
 
 ### Debugging
@@ -105,5 +105,5 @@ As the complexity of your interpreter code increases over the next homework assi
 
 One other useful feature that the parser provides for helping with debugging is that it decorates every expression of the parsed JavaScript input file with the position (i.e. line and column number) from which it originated in the input file.
 
-Given a value `e` of type `Expr`, you can access the source code line and number with `e.pos.line` and `e.pos.column`, respectively. You will probably not need this functionality for the first version of the interpreter, but I already wanted to make sure you are aware that it exists.
+Given a value `e` of type `Expr`, you can access the source code line and number with `e.pos.line` and `e.pos.column`, respectively. You will probably not need this functionality for the first version of the interpreter, but now you are aware that it exists.
 
